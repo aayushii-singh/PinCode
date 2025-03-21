@@ -1,7 +1,8 @@
-function validatePIN(pin) {
+function validatePinCode(pin) {
     let regex = /^[0-9]{6}$/;
-    console.log(`${pin} is ${regex.test(pin) ? 'Valid' : 'Invalid'}`);
+    console.log(`${pin} is ${regex.test(pin) ? "Valid" : "Invalid"}`);
 }
 
-validatePIN("400088"); // Valid
-validatePIN("A400088"); // Invalid
+validatePinCode("400088");  // Valid
+validatePinCode("A400088"); // Invalid
+validatePinCode("400088B"); // Invalid
